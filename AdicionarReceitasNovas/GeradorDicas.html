@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body style="text-align: center;">
+
+        <h1>Preencha todos os campos abaixo e clique no botão "Gerar código" para obter o código a ser colado em Dicas.html</h1>
+        <h2 style="color: red;">Os campos com * são obrigatórios</h2>
+
+        <p style="font-size: 25px;">Nome da dica exibida na lista<span style="color:red;">*</span></p>
+        <input id="nomeDicaExibida" type="text">
+        <br>
+        <p style="text-decoration: underline;">O que irá mudar?</p><br>
+        <img src="ImgsGerarCodigos/TituloExibidoDicas.png">
+
+        <p style="font-size: 25px;">Textos/Imagens Dicas<span style="color:red;">*</span></p>
+        <p style="color:red; margin: 0 20%; font-size: 25px; margin-bottom: 2%; text-align: justify;">OBS: Escreva o texto desejado e aperte o botão "Adicionar texto". Assim que o fizer, será adicionado um texto 
+        e o próximo a ser adicionado vai quebrar linha. O mesmo vale para imagens. É possível adicionar múltiplos textos e/ou imagens.</p>
+        <span>Texto:</span><input id="textoDicas" type="text" style="width: 70%">
+        <div style="display:flex; justify-content: center; margin: 2%">
+            <p>Imagem (Nome):</p><input id="nomeImagem" type="text">
+            <p style="margin-left: 1%">Extensão da imagem<span style="color:red;">*</span></p>
+            <select id="extensoes">
+                <option value="jpg">jpg</option>
+                <option value="jpeg">jpeg</option>
+                <option value="png">png</option>
+                <option value="gif">gif</option>
+            </select>
+            <p style="margin-left: 1%">Comprimento da imagem<span style="color:red;">*</span></p>
+            <select id="comprimento">
+                <option value="25%">25%</option>
+                <option value="50%">50%</option>
+                <option value="75%">75%</option>
+                <option value="100%">100%</option>
+            </select>
+        </div>
+        <br>
+        <button id="adicionaTexto">Adicionar Texto</button>
+        <button id="adicionaImagem">Adicionar Imagem</button>
+        <button id="apagaTudo">Apagar Tudo</button>
+        <br>
+
+        <p style="font-size: 25px;">Visualize como ficará seu texto + imagens</p>
+
+        <div id="visualizador" style="border: solid 2px black; width: 90%; margin: auto; min-height: 50px; margin-bottom: 2%;">
+
+        </div>
+
+        <br>
+
+        <p style="font-size: 25px;">O número da dica em Inglês (Ex: One - Exceções)<span style="color:red;">*</span></p>
+        <input id="hintNumber" type="text">
+        <br>
+
+        <br><br><br>
+
+        <button id="gerarCodigo" style="font-size: 30px; font-weight: bold; border: solid 3px black; cursor: pointer;">Gerar Código</button>
+
+        <br>
+        <br>
+
+        <p style="text-align:initial;" id="codigoGerado"></p>
+
+        <br><br>
+
+        <h1>Copie e cole no arquivo Dicas.html o código gerado na região exibida na imagem abaixo.</h1>
+        <br><br>
+
+        <img src="ImgsGerarCodigos/RegiaoDicas.png">
+
+
+        
+    </body>
+
+    <script src="GeradorDicas.js"></script>
+</html>
